@@ -1,0 +1,124 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.game-container {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0,0,0,0.5);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+.score-board {
+  margin-bottom: 2rem;
+}
+
+.score {
+  font-size: 1.5rem;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ffd700;
+}
+
+.hands-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.player-hand, .computer-hand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hand-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+  padding: 1rem;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+}
+
+.hand-button:hover:not(:disabled) {
+  transform: scale(1.1);
+  background: rgba(255,255,255,0.2);
+}
+
+.hand-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.hand-icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hand-image {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
+}
+
+.result {
+  font-size: 2rem;
+  margin: 1rem 0;
+  animation: popIn 0.5s ease;
+}
+
+.result.win {
+  color: #00ff00;
+  text-shadow: 0 0 20px #00ff00;
+}
+
+.result.lose {
+  color: #ff0000;
+  text-shadow: 0 0 20px #ff0000;
+}
+
+.result.draw {
+  color: #ffff00;
+  text-shadow: 0 0 20px #ffff00;
+}
+
+.winner {
+  animation: pulse 1s infinite;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0); opacity: 0; }
+  80% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Добавьте изображения для рук в public/ */
