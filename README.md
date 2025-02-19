@@ -24,8 +24,8 @@ JavaScript: Логика игры, например, как определить
 
 Как запустить?
 ```
-git clone https://github.com/TrulyGoner/Clicker.git
-cd Clicker && npm install
+git clone https://github.com/TrulyGoner/RPC.git
+cd RPC && npm install
 npm run dev
 ```
 ![photo_2025-02-19_15-56-11](https://github.com/user-attachments/assets/669bcbfa-62e9-4717-ac42-9502f0942180)
