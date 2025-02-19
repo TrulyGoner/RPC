@@ -1,8 +1,32 @@
-# React + Vite
+Что внутри?
+🎮 Игра: Классическая игра с выбором камня, ножниц или бумаги.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+💅 Дизайн: Я постарался сделать красивый и современный интерфейс с анимациями.
 
-Currently, two official plugins are available:
+📈 Счёт: Есть система подсчёта очков, чтобы следить за своими победами.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎨 Анимации: Добавил немного анимаций, чтобы игра выглядела живее.
+
+Как это работает?
+Выбираешь камень, ножницы или бумагу.
+
+Компьютер тоже делает выбор.
+
+Смотришь результат и узнаёшь, кто победил.
+
+Технологии
+React: Я использовал React для создания интерфейса и управления состоянием.
+
+CSS: Все стили и анимации написаны вручную.
+
+JavaScript: Логика игры, например, как определить победителя.
+
+Как запустить?
+```
+git clone https://github.com/TrulyGoner/Clicker.git
+cd Clicker && npm install
+npm run dev
+```
+![photo_2025-02-19_15-56-11](https://github.com/user-attachments/assets/669bcbfa-62e9-4717-ac42-9502f0942180)
+![photo_2025-02-19_15-56-08](https://github.com/user-attachments/assets/5b1c8d23-3080-4ce4-a82d-2dd2c2e04a14)
+![photo_2025-02-19_15-56-13](https://github.com/user-attachments/assets/3b4c1831-b3e4-41e2-8466-e4e33350bb01)
